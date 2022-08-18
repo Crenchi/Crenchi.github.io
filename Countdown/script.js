@@ -1,5 +1,5 @@
     // The data/time we want to countdown to
-    var countDownDate = new Date("Aug 18, 2022 12:20:00").getTime();
+    var countDownDate = new Date("Aug 19, 2022 12:20:00").getTime();
 
     // Run myfunc every second
     var myfunc = setInterval(function() {
@@ -29,3 +29,11 @@
         document.getElementById("end").innerHTML = "TIME UP!!";
     }
     }, 1000);
+
+    const btn = document.getElementById("music");
+    btn.addEventListener("click", playMusic());
+
+    function playMusic() {
+        let audio = new Audio("./oak.mp3")
+        audio.play();
+    }

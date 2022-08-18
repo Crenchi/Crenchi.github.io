@@ -95,6 +95,7 @@
   }
 
   .countdown {
-    position: relative;
+    position: justify;
     width: 100%;
+    text-align: center;
   }
