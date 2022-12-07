@@ -12,6 +12,27 @@
     animation-iteration-count: infinite;
 }
 
+.back{
+    background-image:
+        radial-gradient(
+            circle at center,
+            transparent,
+            pink 50%
+        )
+}
+
+.back2 {
+    z-index: -9;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
 .heart {
     position: absolute;
     margin: auto;
@@ -52,9 +73,18 @@
 
 
 @keyframes backdiv {
-    50% {
-        background: #ffe6f2;
+    0% {
+        opacity: 0%;
     }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+
 }
 
 @keyframes beat {
@@ -68,5 +98,5 @@
 }
 
 .clickButton {
-    
+
 }
