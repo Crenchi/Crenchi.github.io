@@ -8,7 +8,7 @@
     height: 100%;
     background: white;
     animation-name: backdiv;
-    animation-duration: 1s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
@@ -17,7 +17,7 @@
         radial-gradient(
             circle at center,
             transparent,
-            red 50%
+            #FFD5D5 50%
         )
 }
 
@@ -45,7 +45,7 @@
     width: 50px;
     transform: rotate(-45deg);
     animation-name: beat, changecolor;
-    animation-duration: 1s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
@@ -59,7 +59,7 @@
     top: 0px;
     left: 25px;
     animation-name: changecolor;
-    animation-duration: 1s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
@@ -73,7 +73,7 @@
     top: -25px;
     left: 0px;
     animation-name: changecolor;
-    animation-duration: 1s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
@@ -81,6 +81,10 @@
 @keyframes backdiv {
     0% {
         opacity: 0%;
+    }
+
+    33% {
+        opacity: 100%;
     }
 
     50% {
@@ -98,6 +102,10 @@
         transform: scale(1) rotate(-45deg);
     }
 
+    33% {
+        transform: scale(0.6) rotate(-45deg);
+    }
+
     50% {
         transform: scale(0.6) rotate(-45deg);
     }
@@ -107,9 +115,12 @@
     0% {
         background-color: pink;
     }
+    33% {
+        background-color: #FFB0B0;
+    }
 
     50% {
-        background-color: red;
+        background-color: #FFB0B0;
     }
 
     100% {
