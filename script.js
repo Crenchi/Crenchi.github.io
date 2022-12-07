@@ -1,6 +1,10 @@
 let button = document.querySelector("button");
     button.style.backgroundColor = 'white';
 
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+
 window.onload = function (){
     button.addEventListener("click", () => {
         const backgroundColor = button.style.backgroundColor;
