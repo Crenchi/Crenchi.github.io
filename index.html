@@ -6,10 +6,13 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button>Click me</button>
-    <p>No handler here.</p>
-    <iframe src="/Audio/Silence.mp3" allow="autoplay" id="audio"></iframe>
-    <audio id="player" autoplay controls><source src="/Audio/oak.mp3" type="audio/mp3"></audio>
+    <div class="back"></div>
+   <div class="heartleft"></div>
+   <div class="heartright"></div>
+   <div class="heart"></div>
+    <button id="clickButton">Click me</button>
+    <audio controls autoplay loop>
+        <source id="my_audio" src="/Audio/burningHill.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <script type="application/javascript" src="script.js"></script>
