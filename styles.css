@@ -101,9 +101,6 @@
     50% {
         transform: scale(0.6) rotate(-45deg);
     }
-
-    100% {
-    }
 }
 
 @keyframes changecolor {
