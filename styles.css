@@ -135,3 +135,104 @@
 .clickButton {
     z-index: 1;
 }
+#in,#hold,#out {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 20%;
+    color: black;
+    font-size: large;
+}
+
+#in{
+    animation-name: in;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes in {
+    0% {
+        opacity: 100%;
+    }
+    27% {
+        opacity: 100%;
+    }
+
+    30% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    97% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+#hold{
+    animation-name: hold;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hold {
+    0% {
+        opacity: 0%;
+    }
+    27% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    53% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+#out{
+    animation-name: out;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes out{
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    53% {
+        opacity: 100%;
+    }
+
+    97% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
