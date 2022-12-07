@@ -99,14 +99,18 @@
 
 @keyframes beat {
     0% {
-        transform: scale(1) rotate(-45deg);
-    }
-
-    33% {
         transform: scale(0.6) rotate(-45deg);
     }
 
+    33% {
+        transform: scale(2) rotate(-45deg);
+    }
+
     50% {
+        transform: scale(2) rotate(-45deg);
+    }
+
+    100% {
         transform: scale(0.6) rotate(-45deg);
     }
 }
