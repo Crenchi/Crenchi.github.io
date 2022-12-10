@@ -1,6 +1,10 @@
 let button = document.querySelector("button");
     button.style.backgroundColor = 'white';
 
+let audio = document.querySelector("audio");
+let heart = document.querySelector("heart");
+
+
 //window.onload = function() {
 //    document.getElementById("my_audio").play();
 //}
@@ -18,3 +22,14 @@ window.onload = function (){
         }
       });
     }
+
+anime = function(){
+    addclasses();
+}
+
+addclasses = function(){
+    let heart = document.querySelector("heart");
+    heart.target.classList.add('heartanime');
+
+}
+
