@@ -7,21 +7,20 @@
     width: 100%;
     height: 100%;
     background: white;
+    opacity: 0%;
 }
 
 .backanime {
-  animation-name: backdiv;
+    animation-name: backdiv;
     animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
-.back{
+.back {
     background-image:
-        radial-gradient(
-            circle at center,
+        radial-gradient(circle at center,
             transparent,
-            #FFD5D5 50%
-        )
+            #FFD5D5 50%)
 }
 
 .back2 {
@@ -47,7 +46,7 @@
     height: 50px;
     width: 50px;
     transform: rotate(-45deg);
-  transform: scale(0.6) rotate(-45deg);
+    transform: scale(0.6) rotate(-45deg);
 }
 
 .heartanime {
@@ -85,7 +84,7 @@
     left: 0px;
 }
 
-.heartanime:before{
+.heartanime:before {
     animation-name: changecolor;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -133,6 +132,7 @@
     0% {
         background-color: pink;
     }
+
     33% {
         background-color: red;
     }
@@ -150,10 +150,13 @@
     z-index: 1;
 }
 
-.heart{
+.heart {
     z-index: 9999999999
 }
-#in,#hold,#out {
+
+#in,
+#hold,
+#out {
     opacity: 0;
     position: absolute;
     margin-left: auto;
@@ -166,7 +169,7 @@
     font-size: large;
 }
 
-.inanime{
+.inanime {
     animation-name: inanime;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -176,6 +179,7 @@
     0% {
         opacity: 100%;
     }
+
     27% {
         opacity: 100%;
     }
@@ -197,7 +201,7 @@
     }
 }
 
-.holdanime{
+.holdanime {
     animation-name: hold;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -207,6 +211,7 @@
     0% {
         opacity: 0%;
     }
+
     27% {
         opacity: 0%;
     }
@@ -228,13 +233,13 @@
     }
 }
 
-.outanime{
+.outanime {
     animation-name: out;
     animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
-@keyframes out{
+@keyframes out {
     0% {
         opacity: 0%;
     }
@@ -255,4 +260,3 @@
         opacity: 0%;
     }
 }
-    
