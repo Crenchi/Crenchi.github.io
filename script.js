@@ -1,4 +1,4 @@
-//let audio = document.getElementById("audio");
+let audio = document.getElementById("audio");
 
 anime = function(){
   addclasses();
@@ -15,7 +15,7 @@ addclasses = function(){
   hold.classList.toggle('holdanime')
   let out = document.querySelector('#out')
   out.classList.toggle('outanime')
-  //if(!audio.paused){
-    //audio.pause();
-    //audio.currentTime = 0;}
+  if(!audio.paused){
+    audio.pause();
+    audio.currentTime = 0;}
 }
