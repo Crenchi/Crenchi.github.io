@@ -7,7 +7,10 @@
     width: 100%;
     height: 100%;
     background: white;
-    animation-name: backdiv;
+}
+
+.backanime {
+  animation-name: backdiv;
     animation-duration: 12s;
     animation-iteration-count: infinite;
 }
@@ -40,10 +43,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: red;
+    background-color: pink;
     height: 50px;
     width: 50px;
     transform: rotate(-45deg);
+  transform: scale(0.6) rotate(-45deg);
 }
 
 .heartanime {
@@ -54,7 +58,7 @@
 }
 
 .heart:after {
-    background-color: red;
+    background-color: pink;
     content: "";
     border-radius: 50%;
     position: absolute;
@@ -71,7 +75,7 @@
 }
 
 .heart:before {
-    background-color: red;
+    background-color: pink;
     content: "";
     border-radius: 50%;
     position: absolute;
@@ -145,7 +149,12 @@
 .clickButton {
     z-index: 1;
 }
+
+.heart{
+    z-index: 9999999999
+}
 #in,#hold,#out {
+    opacity: 0;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -157,13 +166,13 @@
     font-size: large;
 }
 
-#in{
-    animation-name: in;
+.inanime{
+    animation-name: inanime;
     animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
-@keyframes in {
+@keyframes inanime {
     0% {
         opacity: 100%;
     }
@@ -188,7 +197,7 @@
     }
 }
 
-#hold{
+.holdanime{
     animation-name: hold;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -219,7 +228,7 @@
     }
 }
 
-#out{
+.outanime{
     animation-name: out;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -246,3 +255,4 @@
         opacity: 0%;
     }
 }
+    

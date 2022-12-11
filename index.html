@@ -6,19 +6,18 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <audio id="audio" controls autoplay loop hidden>
+        <source id="my_audio" src="/Audio/burningHill.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
     <div class="back2"></div>
     <div class="back">
         <p id="in">Breathe In</p>
     <p id="hold">Hold It In</p>
     <p id="out">Breath Out</p>
     </div>
-    <div class="allheart">
-        <div class="heart"></div>
-    </div>
-    <audio id="audio" controls autoplay loop onplay=anime()>
-        <source id="my_audio" src="/Audio/burningHill.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <div class="heart" onclick=anime()></div>
     <script type="application/javascript" src="script.js"></script>
 </body>
 </html>
