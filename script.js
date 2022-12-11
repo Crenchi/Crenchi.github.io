@@ -17,5 +17,8 @@ addclasses = function(){
   out.classList.toggle('outanime')
   if(!audio.paused){
     audio.pause();
-    audio.currentTime = 0;}
+    audio.currentTime = 0;
+    } else {
+        audio.play();
+    }
 }
