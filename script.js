@@ -1,10 +1,16 @@
 let audio = document.getElementById("audio");
-
+var vibrator = 0;
+var vibrating = Boolean(true);
+const alert_number = 10;
+const pattern = [100,300,100,100,100,500]
 anime = function(){
   addclasses();
+  playPauseMusic();
+  vibration();
 }
 
 addclasses = function(){
+    navigator.vibrate([100,300,100,100,100,500]);
   let heart = document.querySelector('.heart')
   heart.classList.toggle('heartanime')
   let back = document.querySelector('.back')
@@ -15,10 +21,24 @@ addclasses = function(){
   hold.classList.toggle('holdanime')
   let out = document.querySelector('#out')
   out.classList.toggle('outanime')
-  if(!audio.paused){
-    audio.pause();
-    audio.currentTime = 0;
+}
+
+playPauseMusic = function(){
+    if(!audio.paused){
+        audio.pause();
+        audio.currentTime = 0;
     } else {
         audio.play();
+    }
+}
+
+vibration = function(){
+    if(vibrating){
+        navigator.vibrate(0);
+        vibrating = false;
+    } else {
+        navigator.vibrate(pattern);
+        //navigator.vibrate(pattern, true);
+        vibrating = true
     }
 }
