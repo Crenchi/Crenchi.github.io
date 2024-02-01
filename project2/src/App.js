@@ -2,13 +2,13 @@ import TimersDashboard from './timer';
 
 function App() {
 
-  const goBack = () => {
+  function goBack(){
     window.helpers.goBack();
   };
 
   return (
     <>
-    <button class="ui button absolute-top-left" onClick={goBack()}>Go back</button>
+    <button class="ui button absolute-top-left" onClick={goBack}>Go back</button>
     <TimersDashboard/>
     </>
   );
