@@ -2,7 +2,7 @@ let audio;
 
 const noClick = () => {
     audio = document.getElementById("Sad");
-    playPauseMusic();
+    playMusic();
 
     const button = document.getElementById('No');
     const viewportWidth = window.innerWidth;
@@ -29,3 +29,10 @@ const noClick = () => {
         audio.play();
     }
 }
+
+  playMusic = function () {
+    audio.currentTime = 0;
+    if(audio.pause){
+      audio.play();
+    }
+  }
