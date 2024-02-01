@@ -23,6 +23,16 @@ button {
     color: white; /* Set text color */
     border: none; /* Remove default button border */
     cursor: pointer; /* Add pointer cursor on hover */
+    position: absolute;
+    top: 100px;
+}
+
+#Yes {
+    left: 10%;
+}
+
+#No {
+    left: 80%;
 }
 
 /* Style the buttons on hover */
