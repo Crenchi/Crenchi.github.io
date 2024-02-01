@@ -52,6 +52,11 @@ noButton.addEventListener('mouseout', function () {
 
 
 function showImage() {
+  var specialParagraph = document.getElementById('specialText');
+
+  // Update the text content
+  specialParagraph.textContent = 'Thank u for being my pookie wookie :*';
+
   // Get the image element
   var image = document.getElementById('selfie');
 
