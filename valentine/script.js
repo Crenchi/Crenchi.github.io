@@ -50,9 +50,7 @@ var noButton = document.getElementById('No');
 noButton.addEventListener('mouseover', function () {
     changeText('No', sad);
 });
-noButton.addEventListener('mouseout', function () {
-    changeText('No', 'No');
-});
+noButton.addEventListener('mouseover', noClick());
 
 
 function showImage() {
