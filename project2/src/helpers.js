@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 window.helpers = (function () {
     function newTimer(attrs = {}) {
       const timer = {
@@ -48,7 +49,7 @@ window.helpers = (function () {
     }
 
     function goBack(){
-        window.history.back();
+        history.back();
     }
   
     return {
