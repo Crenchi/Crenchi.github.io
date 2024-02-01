@@ -5,6 +5,10 @@ anime = function () {
     playPauseMusic();
 }
 
+goBack = function () {
+    window.history.back();
+}
+
 addclasses = function () {
     let heart = document.querySelector('.heart')
     heart.classList.toggle('heartanime')

@@ -46,12 +46,17 @@ window.helpers = (function () {
       while (padded.length < size) padded = `0${padded}`;
       return padded;
     }
+
+    function goBack(){
+        window.history.back();
+    }
   
     return {
       millisecondsToHuman,
       newTimer,
       findById,
       renderElapsedString,
+      goBack,
     };
   }());
   
