@@ -18,6 +18,7 @@ const noClick = () => {
   const yesClick = () => {
     audio = document.getElementById("AboSo");
     playPauseMusic()
+    showImage()
   };
 
 
@@ -34,3 +35,29 @@ const noClick = () => {
     audio.currentTime = 0;
     audio.play();
   }
+
+  function changeText(buttonId, newText) {
+    var button = document.getElementById(buttonId);
+    button.innerHTML = newText;
+}
+const sad = ":("
+// Event listeners for the No button
+var noButton = document.getElementById('No');
+noButton.addEventListener('mouseover', function () {
+    changeText('No', sad);
+});
+noButton.addEventListener('mouseout', function () {
+    changeText('No', 'No');
+});
+
+
+function showImage() {
+  // Get the image element
+  var image = document.getElementById('selfie');
+
+  // Set the source of the image
+  image.src = '/Audio/us.jpeg';
+
+  // Display the image container
+  document.getElementById('imageContainer').style.display = 'block';
+}

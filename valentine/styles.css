@@ -3,10 +3,14 @@ body, h1, p, button {
     padding: 0;
 }
 
+body {
+    background-color: #e7b2ca;
+}
+
 #valentineQuestion {
     text-align: center; /* Align content in the center */
     padding: 20px; /* Add some padding */
-    background-color: #f0f0f0; /* Set background color */
+    background-color: #e879ab; /* Set background color */
 }
 
 /* Style the paragraph inside the container */
@@ -25,6 +29,11 @@ button {
     cursor: pointer; /* Add pointer cursor on hover */
     position: absolute;
     top: 100px;
+    border-radius: 12px;
+}
+
+img {
+    border-radius: 12px;
 }
 
 #Yes {
@@ -42,4 +51,12 @@ button {
 
 #No:hover {
     background-color: #ff0000; /* Change background color on hover */
+}
+
+#imageContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
