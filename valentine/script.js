@@ -21,6 +21,10 @@ const noClick = () => {
     showImage()
   };
 
+  const imageClick = () => {
+    audio = document.getElementById("yippee");
+    playMusic()
+  };
 
   playPauseMusic = function () {
     if (!audio.paused) {
