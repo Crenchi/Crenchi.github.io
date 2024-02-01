@@ -32,7 +32,5 @@ const noClick = () => {
 
   playMusic = function () {
     audio.currentTime = 0;
-    if(audio.pause){
-      audio.play();
-    }
+    audio.play();
   }
