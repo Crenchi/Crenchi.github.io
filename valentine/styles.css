@@ -5,12 +5,14 @@ body, h1, p, button {
 
 body {
     background-color: #e7b2ca;
+    
 }
 
 #valentineQuestion {
     text-align: center; /* Align content in the center */
     padding: 20px; /* Add some padding */
-    background-color: #e879ab; /* Set background color */
+    background: linear-gradient(to bottom, #e879ab, #e7b2ca);
+    background-size: 100% 100%;
 }
 
 /* Style the paragraph inside the container */
@@ -68,4 +70,8 @@ img {
     max-height: 200px; /* Set the maximum height */
     width: auto; /* Allow the width to adjust proportionally */
     height: auto; /* Allow the height to adjust proportionally */
+}
+
+#specialText {
+    color:#ff0073;
 }
