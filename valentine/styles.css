@@ -60,3 +60,10 @@ img {
     transform: translate(-50%, -50%);
     display: none;
 }
+
+#selfie {
+    max-width: 300px; /* Set the maximum width */
+    max-height: 200px; /* Set the maximum height */
+    width: auto; /* Allow the width to adjust proportionally */
+    height: auto; /* Allow the height to adjust proportionally */
+}
