@@ -59,6 +59,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    display: flex; /* Add display: flex; to use flexbox */
+    align-items: center; /* Center the image vertically */
 }
 
 #selfie {
