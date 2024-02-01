@@ -1,8 +1,35 @@
-body {
+body, h1, p, button {
     margin: 0;
-    overflow: hidden; /* To ensure the button doesn't go beyond the viewport */
-  }
+    padding: 0;
+}
 
-  button {
-    position: absolute;
-  }
+#valentineQuestion {
+    text-align: center; /* Align content in the center */
+    padding: 20px; /* Add some padding */
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style the paragraph inside the container */
+#valentineQuestion p {
+    font-size: 18px; /* Set font size */
+    margin-bottom: 10px; /* Add space below the paragraph */
+}
+
+button {
+    padding: 10px 20px; /* Add padding to the buttons */
+    margin: 0 10px; /* Add margin between buttons */
+    font-size: 16px; /* Set font size */
+    background-color: #4CAF50; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Style the buttons on hover */
+ #Yes:hover {
+    background-color: #ffb6b6; /* Change background color on hover */
+}
+
+#No:hover {
+    background-color: #ff0000; /* Change background color on hover */
+}
