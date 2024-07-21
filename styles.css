@@ -143,3 +143,25 @@ footer a img {
     height: auto;
     margin-top: 5px; /* Space between the text and the image */
 }
+
+.body {
+    margin-top: 60px;
+}
+
+
+.Intro-Pic {
+    display: flex;              /* Enable flexbox layout */
+    align-items: center;        /* Vertically center items */
+    gap: 20px;                  /* Space between items (optional) */
+}
+
+.Intro-Pic p {
+    margin: 5px;                  /* Remove default margins */
+    flex: 1;                    /* Allow the paragraph to grow and fill available space */
+}
+
+.Intro-Pic img {
+    max-width: 30%;            /* Ensure image does not overflow its container */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 8px;         /* Optional: rounded corners */
+}
