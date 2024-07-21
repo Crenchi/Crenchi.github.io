@@ -7,12 +7,53 @@
 </head>
 
 <body>
-    <p>Projects:</p>
-    <a href="heart/index.html">Project 1</a>
-    <br>
-    <a href="project2/build/index.html">Project 2</a>
-    <br>
-    <a href="valentine/index.html">Project 3</a>
+    <!-- The header with convenient buttons-->
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <img src="Pictures/logo.jpeg" />
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Our Products</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Slideshow showing the projects-->
+    <div class="slider-container">
+        <div class="slider">
+            <a class="Slide" href="Project1/index.html"><img src="Pictures/Project1.png"></a>
+            <a class="Slide" href="Project2/index.html"><img src="Pictures/Project2.png"></a>
+            <a class="Slide" href="Project3/index.html"><img src="Pictures/Project3.png"></a>
+        </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="next" onclick="plusDivs(+1)">&#10095;</button>
+
+    <!-- Footer with important information-->
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
