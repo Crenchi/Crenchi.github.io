@@ -85,9 +85,10 @@ nav ul li a:hover {
     display: block; /* Ensure the <a> tag takes the full width of the container */
 }
 
-.slider img {
-    width: 100%;
-    display: block; /* Ensure the image takes the full width of the container */
+.container img {
+    width: 100%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Make sure images fit within the container */
 }
 
 button.prev, button.next {
