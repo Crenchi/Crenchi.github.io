@@ -172,13 +172,15 @@ footer a img {
 }
 
 .Intro-Pic p {
-    max-width: 50%;
-    margin: 5px;                  /* Remove default margins */
     flex: 1;                    /* Allow the paragraph to grow and fill available space */
+    margin: 5px;                /* Remove default margins */
+    /* Optional: add padding or other styling as needed */
 }
 
 .Intro-Pic img {
+    flex: 1;                    /* Allow the image to grow and fill available space */
     max-width: 30%;            /* Ensure image does not overflow its container */
     height: auto;               /* Maintain aspect ratio */
     border-radius: 8px;         /* Optional: rounded corners */
+    /* Optional: add padding or other styling as needed */
 }
