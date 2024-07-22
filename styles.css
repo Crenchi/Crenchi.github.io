@@ -164,12 +164,15 @@ footer a img {
 
 
 .Intro-Pic {
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;              /* Enable flexbox layout */
     align-items: center;        /* Vertically center items */
     gap: 20px;                  /* Space between items (optional) */
 }
 
 .Intro-Pic p {
+    max-width: 50%;
     margin: 5px;                  /* Remove default margins */
     flex: 1;                    /* Allow the paragraph to grow and fill available space */
 }
