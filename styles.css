@@ -87,8 +87,7 @@ nav ul li a:hover {
 
 .container img {
     width: 100%; /* Make images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Make sure images fit within the container */
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
 }
 
 button.prev, button.next {
