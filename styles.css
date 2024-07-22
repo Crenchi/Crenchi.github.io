@@ -68,7 +68,7 @@ nav ul li a:hover {
     overflow: hidden;
     margin: 80px auto 0; /* Center the slider and add margin from the top */
     border: 2px solid #ccc; /* Optional: Add border to visualize the slider size */
-    border-radius: 0px; /* Optional: Add border-radius for rounded corners */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
     background-color: #fff; /* Optional: Add background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box-shadow for depth */
     box-sizing: border-box; /* Include padding and border in width calculation */
@@ -86,7 +86,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 20px; /* Padding on left and right */
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
