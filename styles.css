@@ -133,7 +133,7 @@ footer {
     background-color: #f0f0f0;
     border-top: 2px solid black;
     color: white;
-    padding: 10px 20px; /* Adjust padding to keep the footer small */
+    padding: 10px 10px; /* Adjust padding to keep the footer small */
     box-sizing: border-box;
     z-index: 1000;
     display: flex;
@@ -178,6 +178,30 @@ footer a img {
 }
 
 .Intro-Pic img {
+    flex: 1;                    /* Allow the image to grow and fill available space */
+    max-width: 30%;            /* Ensure image does not overflow its container */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 8px;         /* Optional: rounded corners */
+    /* Optional: add padding or other styling as needed */
+}
+
+.WhoIAm {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;              /* Enable flexbox layout */
+    align-items: center;        /* Vertically center items */
+    gap: 20px;                  /* Space between items (optional) */
+}
+
+.WhoIAm p,
+.WhoIAm h2,
+.WhoIAm h5{
+    flex: 1;                    /* Allow the paragraph to grow and fill available space */
+    margin: 2px;                /* Remove default margins */
+    /* Optional: add padding or other styling as needed */
+}
+
+.WhoIAm img {
     flex: 1;                    /* Allow the image to grow and fill available space */
     max-width: 30%;            /* Ensure image does not overflow its container */
     height: auto;               /* Maintain aspect ratio */
